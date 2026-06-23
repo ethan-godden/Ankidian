@@ -96,3 +96,7 @@ npm run demo
 ## Credits
 
 Inspired by [obsidian-spaced-repetition](https://github.com/st3v3nmw/obsidian-spaced-repetition). Scheduling by [ts-fsrs](https://github.com/open-spaced-repetition/ts-fsrs).
+
+## Licence
+
+[MIT](LICENSE)
