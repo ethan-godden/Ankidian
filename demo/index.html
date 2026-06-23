@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ankidian demo</title>
+<style>
+/* Stand-ins for the variables an Obsidian theme provides. */
+:root {
+    --background-primary: #ffffff; --background-secondary: #f5f6f8;
+    --background-modifier-border: #dcdfe4; --background-modifier-hover: #eceef2;
+    --text-normal: #222; --text-muted: #6b7280; --text-faint: #a3a8b3; --text-accent: #7c3aed;
+    --interactive-accent: #7c3aed;
+    --color-blue: #2563eb; --color-orange: #d97706; --color-green: #15803d; --color-red: #dc2626;
+    --font-monospace: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --code-background: #f5f6f8; --code-normal: #24292f; --code-comment: #8b949e;
+    --code-punctuation: #57606a; --code-tag: #cf222e; --code-value: #8250df;
+    --code-string: #0a7d33; --code-operator: #cf222e; --code-keyword: #cf222e;
+    --code-function: #8250df; --code-important: #d97706; --code-property: #0550ae;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-primary: #1e1e1e; --background-secondary: #262626;
+        --background-modifier-border: #3a3a3a; --background-modifier-hover: #303030;
+        --text-normal: #dadada; --text-muted: #9a9a9a; --text-faint: #666; --text-accent: #a78bfa;
+        --interactive-accent: #8b5cf6;
+        --color-blue: #60a5fa; --color-orange: #fbbf24; --color-green: #4ade80; --color-red: #f87171;
+        --code-background: #262626; --code-normal: #dadada; --code-comment: #7d7d7d;
+        --code-punctuation: #b3b3b3; --code-tag: #fb7185; --code-value: #c4b5fd;
+        --code-string: #86efac; --code-operator: #fb7185; --code-keyword: #fb7185;
+        --code-function: #c4b5fd; --code-important: #fbbf24; --code-property: #7dd3fc;
+    }
+}
+html, body { height: 100%; margin: 0; }
+body { background: var(--background-secondary); color: var(--text-normal); font: 16px/1.5 system-ui, sans-serif; }
+button { font: inherit; padding: 6px 14px; border-radius: 6px; border: 1px solid var(--background-modifier-border); background: var(--background-primary); color: var(--text-normal); }
+button.mod-cta { background: var(--interactive-accent); border-color: var(--interactive-accent); color: #fff; }
+button:disabled { opacity: .5; }
+code { font-family: var(--font-monospace); }
+:not(pre) > code { background: var(--code-background); padding: .1em .3em; border-radius: 4px; font-size: .9em; }
+/* What Obsidian's theme does for Prism tokens. */
+.token.comment { color: var(--code-comment); } .token.punctuation { color: var(--code-punctuation); }
+.token.tag, .token.constant, .token.symbol { color: var(--code-tag); }
+.token.boolean, .token.number { color: var(--code-value); }
+.token.string, .token.char, .token.builtin, .token.attr-name { color: var(--code-string); }
+.token.operator { color: var(--code-operator); } .token.keyword, .token.atrule { color: var(--code-keyword); }
+.token.function, .token.class-name { color: var(--code-function); }
+.token.regex, .token.important, .token.variable { color: var(--code-important); }
+.token.property { color: var(--code-property); }
+</style>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div id="app"></div>
+<script src="dist/demo.js"></script>
+</body>
+</html>

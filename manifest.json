@@ -1,0 +1,9 @@
+{
+    "id": "ankidian",
+    "name": "Ankidian",
+    "version": "0.1.0",
+    "minAppVersion": "1.8.7",
+    "description": "Spaced repetition with typed, syntax-highlighted cloze deletions, including inside code blocks.",
+    "author": "Ethan Godden",
+    "isDesktopOnly": false
+}

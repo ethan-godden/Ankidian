@@ -1,0 +1,7 @@
+node_modules/
+main.js
+demo/dist/
+.DS_Store
+data.json
+dev-vault/.obsidian/workspace*.json
+dev-vault/Ankidian/

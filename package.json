@@ -1,0 +1,34 @@
+{
+  "name": "ankidian",
+  "version": "0.1.0",
+  "description": "Spaced repetition for Obsidian with typed, syntax-highlighted cloze deletions.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc --noEmit && node esbuild.config.mjs production",
+    "demo": "node esbuild.config.mjs demo",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "obsidian",
+    "spaced repetition",
+    "flashcards",
+    "cloze",
+    "fsrs"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "esbuild": "^0.28.2",
+    "marked": "^18.2.1",
+    "obsidian": "^1.14.4",
+    "prismjs": "^1.30.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1"
+  },
+  "dependencies": {
+    "ts-fsrs": "^6.0.1"
+  }
+}
